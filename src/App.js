@@ -1,6 +1,7 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import CountReducer from './components/countReducer';
 import ClassCounter from './components/classCounter'
 import HooksCounter from './components/hooksCounter'
 import HooksCounter2 from './components/hooksCounter2'
@@ -21,10 +22,10 @@ function App() {
  
   return (
     <div className="App">
-  
-    <userContext.Provider value={userName}>
+      <CountReducer />
+    {/* <userContext.Provider value={userName}>
       <ComponentC />
-      </userContext.Provider>
+      </userContext.Provider> */}
    
      {/* <Router>
        <Switch>
