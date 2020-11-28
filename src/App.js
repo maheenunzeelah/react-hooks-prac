@@ -10,11 +10,13 @@ import HooksInterval from './components/hooksInterval'
 import HooksCounterTwo from './components/hooksCounterTwo';
 import Effect from './components/effectRunOnce';
 import MouseContainer from './components/MouseContainer';
+import DataReducer from './components/dataReducer';
 import DataFetching from './components/dataFetching';
 import ComponentC from './components/context/ComponentC';
+import ParentComponent from './Callbacks/ParentComponent';
 import PostDetails from './components/postDetails';
 import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
-
+import RefHooks from './components/refHooks'
 export const userContext=React.createContext();
 const userName="Maheen";
 const age='22';
@@ -22,7 +24,9 @@ function App() {
  
   return (
     <div className="App">
-      <CountReducer />
+    <RefHooks />
+    {/* <ParentComponent /> */}
+     {/* <DataReducer /> */}
     {/* <userContext.Provider value={userName}>
       <ComponentC />
       </userContext.Provider> */}
